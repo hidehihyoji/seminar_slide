@@ -1,0 +1,241 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+	<title>PC-UNIXサーバ構築入門コース</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=792, user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<link rel="stylesheet" href="shower/themes/ribbon/styles/screen.css">
+	<link rel="stylesheet" href="shower/themes/ribbon/styles/style.css"  charset="utf-8">
+
+</head>
+<body class="list">
+	<header class="caption">
+		<h1>PC-UNIXサーバ構築入門コース</h1>
+	</header>
+
+	<section class="slide cover" id="Cover">
+		<div>
+			<p>谷澤研究室</p>
+			<h2>PC-UNIXサーバ構築入門コース</h2>
+			<p>井口　植村　斉藤　西川</p>
+			<img src="pictures/cover.jpg" alt="">
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>概要</h2>
+			<ol>
+				<li>Webアプリケーション開発</li>
+				<li>サーバー構築</li>
+				<li>デモンストレーション</li>
+				<li>技術の説明</li>
+				<li>今後の展望</li>
+			</ol>
+		</div>
+	</section>
+
+	<section class="slide title">
+		<div>
+			<h2>Webアプリケーションの開発</h2>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>Webアプリケーションの開発</h2>
+			<h3>「<span style="color:red;"}>S</span>chool<span style="color:red;"}>R</span>ecord<span style="color:red;"}>M</span>anager」</h3>
+
+			<img class="srm" src="pictures/SRM.png" height="400" width="auto" alt="">
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>Webアプリケーションの開発</h2>
+			<h3>どんなアプリケーション？</h3>
+			<ul>
+				<li>学生個人の成績をグラフ化</li>
+				<li>登録されたデータを元に成績を解析</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="slide title">
+		<div>
+			<h2>機能説明</h2>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>機能説明</h2>
+			<h3>各教科のテスト点を学期ごとに管理</h3>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>機能説明</h2>
+			<h3>成績を表・グラフで見ることが可能</h3>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>機能説明</h2>
+			<h3>簡単にログイン・ユーザー登録が可能</h3>
+		</div>
+	</section>
+
+	<section class="slide title">
+		<div>
+			<h2>サーバー構築</h2>
+		</div>
+	</section>
+	<section class="slide">
+		<div>
+			<h2>サーバー構築</h2>
+			<h3>パソコンのスペック</h3>
+			<table>
+				<tr>
+					<td>OS</td>
+					<td>CentOS6.6</td>
+				</tr>
+				<tr>
+					<td>CPU</td>
+					<td>Intel(R) Pentium 3.00Ghz</td>
+				</tr>
+				<tr>
+					<td>メモリ</td>
+					<td>2GB</td>
+				</tr>
+				<tr>
+					<td>HDD</td>
+					<td>50GB</td>
+				</th>
+			</table>
+		</div>
+	</section>
+
+	<section class="slide title">
+		<div>
+			<h2>デモンストレーション</h2>
+		</div>
+	</section>
+
+	<section class="slide title">
+		<div>
+			<h2>技術の説明</h2>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>使用技術</h2>
+			<table>
+				<tr>
+					<td>サーバー</td>
+					<td></td>
+					<td>アプリケーション</td>
+				</tr>
+				<tr>
+					<td>Nginx</td>
+					<td></td>
+					<td>Ruby(Rbenv)</td>
+				</tr>
+				<tr>
+					<td>unicorn</td>
+					<td></td>
+					<td>Git</td>
+				</tr>
+				<tr>
+					<td>sqlite3</td>
+					<td></td>
+					<td>Ruby on Rails</td>
+				</tr>
+				<tr>
+					<td>heroku(PaaS)</td>
+					<td></td>
+					<td>Bootstrap-sass</td>
+				</tr>
+			</table>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>やったこと</h2>
+			<p>CentOS6.6のインストール</p>
+			<p>サーバーソフトNginxのインストール</p>
+			<p>最新版Gitのインストール</p>
+			<p>Rbenvのインストール</p>
+			<p>RubyGemsの導入</p>
+			<p>Ruby on Railsのインストール</p>
+			<p>サービス設計</p>
+			<p>リレーション・データベースの設計</p>
+			<p>Ruby on RailsでWebアプリのサーバー開発</p>
+			<p>herokuと呼ばれるPaaS（Platform as a Service）にデプロイ</p>
+			<p>アプリケーションサーバであるunicornの導入</p>
+			<p>アプリデザイン</p>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>サーバー構築技術について</h2>
+			<h3>Nginxとは</h3>
+			<p>1日に数億リクエストを処理するような大規模サイトを中心に、近年急速にシェアを拡大しているWebサーバー。</p>
+			<p>「高速・軽量・高機能」</p>
+			<p>mrubyでインフラストラクチャを管理できたり、ロードバランサとして駆動させることができる</p>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>サーバー構築技術について</h2>
+			<ul>
+				<li>ロードバランサとしてNginx</li>
+				<li>アプリケーション・サーバーにはunicorn</li>
+			</ul>
+			<p>【ここがポイント】</p>
+			<p>サーバーのスペックが低いため、ソフトウェアのパフォーマンスを最大限に上げようと考えNginxを選択した。</p>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>サーバー構築技術について</h2>
+			<p>HerokuとよばれるPaaS(Platform as a Service)にもデプロイしているので、学外からはそちらのサーバーにアクセスできる。</p>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>アプリケーション開発技術について</h2>
+			<p>Rubyが得意なメンバーがいたのでWEBアプリケーションフレームワークにRuby on Railsを採用した。</p>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>WEBアプリケーションフレームワーク</h2>
+			<p>WEBサイトを効率よく、かつ安全で安定したシステムとして開発するためのライブラリ、あるいはツールのこと。</p>
+		</div>
+	</section>
+
+	<section class="slide cover" id="Picture"><div>
+		<h2>Pictures</h2>
+		<img src="pictures/picture.jpg" alt="">
+		<style>
+			#Picture h2 {
+				color:#FFF;
+				}
+		</style>
+	</div></section>
+
+	<div class="progress"><div></div></div>
+	<script src="shower/shower.min.js"></script>
+</body>
+</html>
